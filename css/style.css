@@ -63,10 +63,6 @@ body {
 
 }
 
-
-
-
-
 .container {
     max-width: 1200px;
     margin-right: auto;
@@ -86,6 +82,11 @@ body {
     background-color: #3172b9;
     border-radius: 4px;
     cursor: pointer;
+}
+
+.btn:hover {
+  filter: brightness(110%);
+  transform: scale(1.05);
 }
 
 .btn.btn-big {
@@ -141,6 +142,7 @@ body {
 .nav-link:focus,
 .nav-link:hover {
   color: #3172b9;
+  filter: brightness(150%);
 }
 
 .nav-item:not(:last-child) {
@@ -157,16 +159,16 @@ body {
   background-size: contain;
 }
  
-.hero-container {
+.section-hero__container {
     padding-top: 120px;
     padding-bottom:  130px;
 } 
 
-.hero-content {
+.section-hero__content {
     max-width: 50%;
 }
 
-.section-hero-heading {
+.section-hero__heading {
   font-size: 40px;
   line-height: 52px;
   font-weight: 300 ;
@@ -175,18 +177,18 @@ body {
   color: #1c1c1c;
 } 
 
-.section-hero-action {
+.section-hero__action {
   display: inline-block;
 }
 
-.section-hero-description {
+.section-hero__description {
     margin-bottom: 30px;
     font-size: 16px;
     line-height: 25px;
     color: #787878;
 }
 
-.section-hero-btn-description {
+.section-hero__btn-description {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -199,7 +201,7 @@ body {
  
 } 
 
-.section-hero-ssl-icon {
+.section-hero__ssl-icon {
   display: inline-block;
   width: 14px;
   height: 17px; 
@@ -237,6 +239,24 @@ body {
     border: 1px solid #e4e4e4;
     border-radius: 5px;
 }
+
+.section-do-item:hover {
+  background-color: #3172b9;
+  cursor: pointer;
+}
+
+.section-do-item:hover .section-do-item-heading {
+  color: white;
+}
+
+.section-do-item:hover .section-do-item-description {
+  color: white;
+}
+
+.section-do-item:hover .section-do-icon path {
+  fill: white;
+}
+
 
 .section-do-item-heading {
   margin-bottom: 18px;
